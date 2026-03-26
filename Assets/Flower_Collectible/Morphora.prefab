@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5430216292621640912}
   - component: {fileID: 3305560876814278745}
   - component: {fileID: 5849079458394299385}
+  - component: {fileID: 3778576713063458543}
   m_Layer: 0
   m_Name: Morphora
   m_TagString: Collectible
@@ -106,9 +107,23 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.92470074, y: 1.778238, z: 0.9098749}
   m_Center: {x: -0.014467716, y: 0.83351195, z: -0.006052494}
+--- !u!114 &3778576713063458543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8740412301689724276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ae8ad2ff96a5542963bb252b7c3789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldSpacePrompt
+  detectRange: 5
+  particleEffect: {fileID: 9162908456430503379, guid: bf8e7d9d838c7084bb4e7f518d18c2ba, type: 3}

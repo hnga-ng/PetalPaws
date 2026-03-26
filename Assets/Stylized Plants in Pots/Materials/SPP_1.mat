@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: SPP_1
-  m_Shader: {fileID: -6465566751694194690, guid: f45b04819d154eeab5ae755751d2cd31, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 976ca980a1c15a3479313392e05a18f0, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -68,6 +68,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2DLOD_6a5201b38516449c96fda83e0b25cd0a_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: bdca5e9a5f4be924782b84af1614d624, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -104,6 +108,8 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _Wind_Jitter: 0.3
+    - _Wind_Scroll: 0.02
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

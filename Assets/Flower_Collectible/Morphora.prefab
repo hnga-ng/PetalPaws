@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c7224075464024ca441678bb0075ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlowerSpawner
-  respawnTime: 10
+  respawnTime: 20
   detectRange: 5
   lookAngleThreshold: 0.5
   particleEffect: {fileID: 9162908456430503379, guid: bf8e7d9d838c7084bb4e7f518d18c2ba, type: 3}

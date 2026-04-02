@@ -3,10 +3,11 @@ using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
 
-public class FlowerSpawner : MonoBehaviour
+public class CollectibleFlower : MonoBehaviour
 {
     [Header("Settings")]
-    public float respawnTime = 10.0f;
+    public string itemID = "Morphora"; // Just for reference, not used in logic here
+    public float respawnTime = 20.0f;
     public float detectRange = 5.0f;
     public float lookAngleThreshold = 0.5f;
     public GameObject particleEffect;
@@ -22,11 +23,11 @@ public class FlowerSpawner : MonoBehaviour
 
     // --- PULSE VARIABLES ---
     private Vector3 originalScale;
-    private Color originalColor;
 
     void Start()
     {
         playerTransform = Camera.main.transform;
+        // This finds the "Press E" text on screen
         hudText = GameObject.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
         myRenderer = GetComponent<MeshRenderer>();
         myCollider = GetComponent<BoxCollider>();
@@ -48,11 +49,11 @@ public class FlowerSpawner : MonoBehaviour
         {
             if (hudText != null && !IAmShowingText)
             {
-                hudText.text = "Press [E] to pick up";
+                hudText.text = "Press [E] to pick up " + itemID;
                 IAmShowingText = true;
             }
 
-            // --- THE PULSE ANIMATION IS BACK ---
+            // --- THE PULSE ANIMATION ---
             float pulse = (Mathf.Sin(Time.time * 5f) + 1f) / 2f;
             transform.localScale = originalScale * (1f + (pulse * 0.1f));
 
@@ -68,9 +69,7 @@ public class FlowerSpawner : MonoBehaviour
             {
                 if (hudText != null) hudText.text = "";
                 IAmShowingText = false;
-
                 // RESET VISUALS
-                if (myRenderer != null) myRenderer.material.color = originalColor;
                 transform.localScale = originalScale;
             }
         }
@@ -80,20 +79,24 @@ public class FlowerSpawner : MonoBehaviour
     {
         isCollected = true;
 
+        // Clear "Press E" text
         if (IAmShowingText && hudText != null) hudText.text = "";
         IAmShowingText = false;
 
         // Reset scale/color before hiding so it's fresh when it respawns
         transform.localScale = originalScale;
 
+        // Visuals and inventory
         if (particleEffect != null) Instantiate(particleEffect, transform.position, Quaternion.identity);
-        InventoryManager.instance.AddFlower(1);
+        InventoryManager.instance.AddItem(itemID, 1);
 
+        // Hide the flower
         if (myRenderer != null) myRenderer.enabled = false;
         if (myCollider != null) myCollider.enabled = false;
 
         yield return new WaitForSeconds(respawnTime);
 
+        // Bring the flower back
         if (myRenderer != null) myRenderer.enabled = true;
         if (myCollider != null) myCollider.enabled = true;
         isCollected = false;

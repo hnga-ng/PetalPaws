@@ -6,8 +6,17 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager instance; // Allows other scripts to find this easily
 
-    public int flowerCount = 0;
-    public TextMeshProUGUI flowerText; // Drag your UI Text here
+    [Header("Morphora Settings")]
+    public int morphoraCount = 0;
+    public TextMeshProUGUI morphoraText; // Drag Morphora UI here
+
+    [Header("Pinkling Settings")]
+    public int pinklingCount = 0;
+    public TextMeshProUGUI pinklingText; // Drag Pinkling UI here
+
+    [Header("Tinker Settings")]
+    public int tinkerCount = 0;
+    public TextMeshProUGUI tinkerText; // Drag TInker UI here
 
     void Awake()
     {
@@ -17,20 +26,38 @@ public class InventoryManager : MonoBehaviour
 
     void Start()
     {
+        // Set the text to 0 at the start so it's not empty
         UpdateUI();
     }
 
-    public void AddFlower(int amount)
+    public void AddItem(string itemName, int amount)
     {
-        flowerCount += amount;
-        UpdateUI();
+        if (itemName == "Morphora")
+        {
+            morphoraCount += amount;
+        }
+        else if (itemName == "Pinkling")
+        {
+            pinklingCount += amount;
+        }
+        else if (itemName == "Tinker")
+        {
+            tinkerCount += amount;
+        }
+
+        UpdateUI(); // Refresh the numbers on screen
     }
 
+    // This helper function keeps the screen updated
     void UpdateUI()
     {
-        if (flowerText != null)
-        {
-            flowerText.text = flowerCount.ToString();
-        }
+        if (morphoraText != null)
+            morphoraText.text = morphoraCount.ToString();
+
+        if (pinklingText != null)
+            pinklingText.text = pinklingCount.ToString();
+
+        if (tinkerText != null)
+            tinkerText.text = tinkerCount.ToString();
     }
 }

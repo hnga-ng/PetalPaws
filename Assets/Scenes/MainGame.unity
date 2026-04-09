@@ -7493,19 +7493,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5154353418551042973, guid: 710df1c27ea2b03448c40f238f4423b7, type: 3}
       propertyPath: m_Name
-      value: Pick Up_7NL
-      objectReference: {fileID: 0}
-    - target: {fileID: 5533834929814534439, guid: 710df1c27ea2b03448c40f238f4423b7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2805587
-      objectReference: {fileID: 0}
-    - target: {fileID: 5533834929814534439, guid: 710df1c27ea2b03448c40f238f4423b7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2805587
-      objectReference: {fileID: 0}
-    - target: {fileID: 5533834929814534439, guid: 710df1c27ea2b03448c40f238f4423b7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2805587
+      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 5533834929814534439, guid: 710df1c27ea2b03448c40f238f4423b7, type: 3}
       propertyPath: m_LocalPosition.x

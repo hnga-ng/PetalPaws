@@ -3,6 +3,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(AudioSource))]
 public class CollectibleFlower : MonoBehaviour
 {
     [Header("Settings")]
@@ -11,6 +12,10 @@ public class CollectibleFlower : MonoBehaviour
     public float detectRange = 5.0f;
     public float lookAngleThreshold = 0.5f;
     public GameObject particleEffect;
+
+    [Header("Audio")] // <--- NEW SECTION - Collect sound settings
+    public AudioClip collectSound;
+    [Range(0, 1)] public float volume = 1.0f;
 
     [Header("References")]
     private TextMeshProUGUI hudText;
@@ -23,6 +28,7 @@ public class CollectibleFlower : MonoBehaviour
 
     // --- PULSE VARIABLES ---
     private Vector3 originalScale;
+    private AudioSource myAudioSource; // New reference
 
     void Start()
     {
@@ -78,6 +84,22 @@ public class CollectibleFlower : MonoBehaviour
     IEnumerator CollectAndRespawn()
     {
         isCollected = true;
+
+        // --- PLAY 2D SOUND ---
+
+        if (collectSound != null)
+        {
+            if (myAudioSource == null) myAudioSource = GetComponent<AudioSource>();
+
+            if (myAudioSource != null)
+            {
+                myAudioSource.PlayOneShot(collectSound, volume);
+            }
+            else
+            {
+                Debug.LogWarning("Collect sound is assigned but no AudioSource found on " + gameObject.name);
+            }
+        }
 
         // Clear "Press E" text
         if (IAmShowingText && hudText != null) hudText.text = "";

@@ -6,7 +6,7 @@ AnimatorOverrideController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cat2_Override
+  m_Name: Cat2_Override_MainMenu
   m_Controller: {fileID: 9100000, guid: a72d9cca2bc223b4689bde1ee5699c73, type: 2}
   m_Clips:
   - m_OriginalClip: {fileID: -203655887218126122, guid: d461c7a1bd75e1e46aafcd1ee72c0de8, type: 3}

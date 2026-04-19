@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 8324033814030414523}
   - component: {fileID: 2701276109964806444}
   - component: {fileID: 731442981912984273}
-  - component: {fileID: 413496596790320004}
+  - component: {fileID: 4441396833638782192}
   - component: {fileID: 5749985265951042244}
   m_Layer: 0
-  m_Name: Pinkling
+  m_Name: Pinkling_Collectible
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.68, y: 0.86, z: 0.9098749}
   m_Center: {x: 0.02, y: 0.45, z: -0.006052494}
---- !u!114 &413496596790320004
+--- !u!114 &4441396833638782192
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,14 +123,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7242970794136337190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c7224075464024ca441678bb0075ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 2580cc593a106c74cade63d78d34ebf6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FlowerSpawner
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleFlower3rd
   itemID: Pinkling
   respawnTime: 20
-  detectRange: 5
-  lookAngleThreshold: 0.5
+  detectRange: 3
   particleEffect: {fileID: 9162908456430503379, guid: 89c56988c2855e34c90eb0e820f0cc29, type: 3}
+  pulseSpeed: 4
+  pulseSize: 0.3
   collectSound: {fileID: 8300000, guid: 0a3253fe3a21ae646b681370f732d467, type: 3}
   volume: 1
 --- !u!82 &5749985265951042244

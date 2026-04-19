@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI; // Required for NavMesh movement
 
-public class CatCompanion : MonoBehaviour
+public class CatCompanion1st : MonoBehaviour
 {
     [Header("Follow Settings")]
     public Transform playerCamera;  // Drag your Main Camera here

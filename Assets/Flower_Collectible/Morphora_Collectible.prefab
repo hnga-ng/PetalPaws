@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5430216292621640912}
   - component: {fileID: 3305560876814278745}
   - component: {fileID: 5849079458394299385}
-  - component: {fileID: 5800926218913424089}
+  - component: {fileID: 173428541929230923}
   - component: {fileID: 3061414550963369911}
   m_Layer: 0
-  m_Name: Morphora
+  m_Name: Morphora_Collectible
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.92470074, y: 1.778238, z: 0.9098749}
   m_Center: {x: -0.014467716, y: 0.83351195, z: -0.006052494}
---- !u!114 &5800926218913424089
+--- !u!114 &173428541929230923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,14 +123,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 8740412301689724276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c7224075464024ca441678bb0075ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 2580cc593a106c74cade63d78d34ebf6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FlowerSpawner
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleFlower3rd
   itemID: Morphora
   respawnTime: 20
-  detectRange: 5
-  lookAngleThreshold: 0.5
+  detectRange: 3
   particleEffect: {fileID: 9162908456430503379, guid: bf8e7d9d838c7084bb4e7f518d18c2ba, type: 3}
+  pulseSpeed: 4
+  pulseSize: 0.3
   collectSound: {fileID: 8300000, guid: 0a3253fe3a21ae646b681370f732d467, type: 3}
   volume: 1
 --- !u!82 &3061414550963369911

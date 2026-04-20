@@ -7,14 +7,27 @@ public class CatCompanion3rd : MonoBehaviour
     // Drag your 'CatFollowTarget' (the empty object we made) here
     public Transform followTarget;
 
+    [Header("Speed Matching")]
+    // The cat will be 15% faster than the girl so it can catch up if it falls behind
+    public float catSpeedMultiplier = 1.15f;
+    // The slowest the cat will move while heading to its target
+    public float minimumWalkSpeed = 2.5f;
+
     private NavMeshAgent agent;
     private Animator anim;
+    private CharacterController girlController; // Reference to the girl's controller
 
     void Start()
     {
         // Get the components from the cat object
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+
+        // Find the CharacterController on the girl (the parent of the target)
+        if (followTarget != null)
+        {
+            girlController = followTarget.GetComponentInParent<CharacterController>();
+        }
 
         // Validation check: Warns you if you forgot to drag the target in
         if (followTarget == null)
@@ -27,7 +40,19 @@ public class CatCompanion3rd : MonoBehaviour
     {
         if (followTarget == null) return;
 
-        // --- 1. MOVEMENT LOGIC ---
+        // --- 1. SPEED MATCHING LOGIC ---
+
+        if (girlController != null)
+        {
+            // We get the girl's actual current speed from her CharacterController
+            float girlCurrentSpeed = girlController.velocity.magnitude;
+
+            // We set the cat's speed to match the girl, multiplied by our 'catch up' value
+            // Mathf.Max ensures the cat never moves slower than 2.5 if it has a destination
+            agent.speed = Mathf.Max(minimumWalkSpeed, girlCurrentSpeed * catSpeedMultiplier);
+        }
+
+        // --- 2. MOVEMENT LOGIC ---
 
         // The cat now simply heads towards the target object we placed near the player's feet
         Vector3 targetPos = followTarget.position;
@@ -39,7 +64,7 @@ public class CatCompanion3rd : MonoBehaviour
             agent.SetDestination(hit.position);
         }
 
-        // --- 2. ANIMATION LOGIC ---
+        // --- 3. ANIMATION LOGIC ---
 
         // This sends the cat's actual walking speed into your Animator "Speed" parameter
         if (anim != null)
@@ -49,8 +74,7 @@ public class CatCompanion3rd : MonoBehaviour
             anim.SetFloat("Speed", currentSpeed);
         }
 
-        // --- 3. ROTATION LOGIC ---
-        // 'LookAtMe' function has been removed. 
+        // --- 4. ROTATION LOGIC ---
         // The NavMeshAgent will now naturally face the direction it is walking.
     }
 }

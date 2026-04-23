@@ -621,7 +621,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 242911652}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -2550,7 +2550,7 @@ MonoBehaviour:
     New Day by Piki\n\tHug by Piki\n\n+ SFX:\n\tClick: https://www.youtube.com/watch?v=Hz3jPOA6gzQ\n\tBling:
     https://www.youtube.com/watch?v=f9P8WYw8Hs0\n\n+ Art assets from AssetStore:
     Drivable-Free Low Poly Cars, FREE Neko Cat Cute Pro Series, Stylized Plants in
-    Pots, Toon Fantasy Nature.\n"
+    Pots, Toon Fantasy Nature.\n\n+ Animation & Characters: Mixamo\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
   m_sharedMaterial: {fileID: -7346653972709393189, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
@@ -4309,7 +4309,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914309836}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}

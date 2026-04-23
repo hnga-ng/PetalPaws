@@ -161,7 +161,7 @@ PrefabInstance:
     - target: {fileID: 4578746352263957812, guid: 1c88ca6f20c52b646876f3b3aa40bb64, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: cd611d325cb461143be2d2e48c88679f, type: 2}
+      objectReference: {fileID: 9100000, guid: 7e459a960226b9d4e861a20ed7830563, type: 2}
     - target: {fileID: 4578746352263957812, guid: 1c88ca6f20c52b646876f3b3aa40bb64, type: 3}
       propertyPath: m_CullingMode
       value: 0
@@ -1159,7 +1159,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6091249284180459995, guid: b378c8c7799eba342a7c00e83058151c, type: 3}
       propertyPath: m_WarningMessage
-      value: 
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'RigRArmPalm'\n\tTransform 'RigRArm2'\n\tTransform
+        'RigLArmPalm'\n\tTransform 'RigRArm1'\n\tTransform 'RigLArm2'\n\tTransform
+        'RigLArm1'\n\tTransform 'RigRArmPalm'\n\tTransform 'RigRArm2'\n\tTransform
+        'RigLArmPalm'\n\tTransform 'RigRArm1'\n\tand more ..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2308,13 +2313,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103164922}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.026128745, y: -0.54390997, z: -0.017021073, w: -0.83856404}
+  m_LocalRotation: {x: 0.027077794, y: -0.5919336, z: -0.015466782, w: -0.8053833}
   m_LocalPosition: {x: -8.766175, y: 7.0383725, z: 0.63461834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -6.179, y: 185.784, z: -3.105}
+  m_LocalEulerAnglesHint: {x: -3.55, y: 72.642, z: -0.41}
 --- !u!4 &1124218551 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3707666127795177765, guid: b378c8c7799eba342a7c00e83058151c, type: 3}

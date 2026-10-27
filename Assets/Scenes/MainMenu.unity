@@ -178,7 +178,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ac59cd39a0e90034cb9b6713ce00fab2, type: 2}
   m_sharedMaterial: {fileID: -7346653972709393189, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &33833313
@@ -1981,8 +1981,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef32dac10b9f6204da21c56e2e147973, type: 2}
-  m_sharedMaterial: {fileID: -3455592437728402265, guid: ef32dac10b9f6204da21c56e2e147973, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ac59cd39a0e90034cb9b6713ce00fab2, type: 2}
+  m_sharedMaterial: {fileID: -5671211275804651946, guid: ac59cd39a0e90034cb9b6713ce00fab2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2552,7 +2552,7 @@ MonoBehaviour:
     Drivable-Free Low Poly Cars, FREE Neko Cat Cute Pro Series, Stylized Plants in
     Pots, Toon Fantasy Nature.\n\n+ Animation & Characters: Mixamo\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9a821a59c21a1a040b38c5a1c76e3bea, type: 2}
   m_sharedMaterial: {fileID: -7346653972709393189, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -2619,7 +2619,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &923977792
@@ -4582,7 +4582,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: About the game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ac59cd39a0e90034cb9b6713ce00fab2, type: 2}
   m_sharedMaterial: {fileID: -7346653972709393189, guid: 63d8e7a68da398d46abb860ab8730deb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4649,7 +4649,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1938849734
@@ -4781,8 +4781,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4a06a2b5a0aeb4b4fa88358ca275905d, type: 2}
-  m_sharedMaterial: {fileID: -2395280755358977977, guid: 4a06a2b5a0aeb4b4fa88358ca275905d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26eaae178c11714499b9599ff69da1e9, type: 2}
+  m_sharedMaterial: {fileID: 4392496027071015882, guid: 26eaae178c11714499b9599ff69da1e9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4806,13 +4806,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 114.5
-  m_fontSizeBase: 114.5
+  m_fontSize: 112.2
+  m_fontSizeBase: 112.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -4982,8 +4982,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef32dac10b9f6204da21c56e2e147973, type: 2}
-  m_sharedMaterial: {fileID: -3455592437728402265, guid: ef32dac10b9f6204da21c56e2e147973, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ac59cd39a0e90034cb9b6713ce00fab2, type: 2}
+  m_sharedMaterial: {fileID: -5671211275804651946, guid: ac59cd39a0e90034cb9b6713ce00fab2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
